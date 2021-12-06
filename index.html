@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto (De)Codificando</title>
+  </head>
+
+  <body>
+    <div class="corpo-bg">
+      <header>
+        <h1>(De)Codificando</h1>
+        <p>
+          Utilize esse site para criar seus códigos ou decodificar suas
+          mensagens, utilizando Cifra de César ou Base64. A Cifra de César é um
+          tipo de cifra de substituição na qual cada letra do texto é
+          substituída por outra, que se apresenta no alfabeto abaixo dela um
+          número fixo de vezes. Base64 é um método para codificação de dados
+          para transferência na Internet. É utilizado frequentemente para
+          transmitir dados binários por meios de transmissão que lidam apenas
+          com texto, como por exemplo para enviar arquivos anexos por e-mail.
+        </p>
+      </header>
+      <main>
+        <form>
+          <label for="Mensagem">Digite aqui a sua mensagem:</label>
+          <textarea
+            cols="70"
+            rows="7"
+            id="Mensagem"
+            class="input-padrao"
+            required
+          ></textarea>
+
+          <fieldset>
+            <legend>Escolha o método de codificação:</legend>
+            <select>
+              <option>Cifra de César</option>
+              <option>Base64</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="radio-codificar"
+              ><input
+                type="radio"
+                value="codificar"
+                name="code"
+                id="radio-codificar"
+                checked
+              />Codificar</label
+            >
+
+            <label for="radio-decodificar"
+              ><input
+                type="radio"
+                value="decodificar"
+                name="code"
+                id="radio-decodificar"
+              />Decodificar</label
+            >
+          </fieldset>
+          <button class="but" type="submit">Codificar Mensagem</button>
+
+          <label for="Mensagem">Resultado:</label>
+          <textarea
+            cols="70"
+            rows="7"
+            id="Mensagem"
+            class="input-padrao"
+            required
+          ></textarea>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <p>© Copyright (De)Codificando - 2021 / Criado por: Thaís Carvalho</p>
+    </footer>
+  </body>
+</html>

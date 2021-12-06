@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(25, 60, 64);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 60, 64, 1) 0%,
+    rgba(2, 0, 36, 1) 50%,
+    rgba(25, 60, 64, 1) 100%
+  );
+  font-family: "Baloo Bhaijaan 2", cursive, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.corpo-bg {
+  max-width: 950px;
+  margin: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(25, 60, 64, 0.6) 0%,
+    rgba(2, 0, 36, 0.6) 50%,
+    rgba(25, 60, 64, 0.6) 100%
+  );
+  /*background: rgba(52, 51, 65, 0.5);*/
+  color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+header h1 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #349ab8;
+}
+header p {
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+form label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+.input-padrao {
+  display: block;
+  margin-bottom: 20px;
+  background: rgba(47, 46, 56, 0.7);
+  border: 1px solid white;
+  border-radius: 10px;
+  font-family: "Baloo Bhaijaan 2", cursive, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+fieldset {
+  border: none;
+  font-size: 18px;
+}
+
+fieldset select {
+  background: rgba(47, 46, 56, 0.7);
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px 0 20px;
+  padding: 10px 20px 10px 2px;
+}
+
+.but {
+  display: block;
+  margin: 3% 0;
+  padding: 20px;
+  border: none;
+  background: #349ab8;
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background: rgba(52, 51, 65, 0.5);
+  color: white;
+  font-size: 14px;
+  padding: 25px;
+  text-align: center;
+}
