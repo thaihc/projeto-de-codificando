@@ -64,6 +64,7 @@ fieldset {
 }
 
 fieldset select {
+  width: 150px;
   background: rgba(47, 46, 56, 0.7);
   color: white;
   font-family: "Baloo Bhaijaan 2", cursive, Arial, Helvetica, sans-serif;
@@ -74,6 +75,20 @@ fieldset select {
   padding: 10px 20px 10px 2px;
 }
 
+.passo {
+  display: none;
+}
+.passo input {
+  width: 150px;
+  background: rgba(47, 46, 56, 0.7);
+  color: white;
+  font-family: "Baloo Bhaijaan 2", cursive, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px 0 20px;
+  padding: 10px 0px 10px 20px;
+}
 .but {
   display: block;
   margin: 3% 0;

@@ -40,10 +40,16 @@
 
           <fieldset>
             <legend>Escolha o método de codificação:</legend>
-            <select>
-              <option>Cifra de César</option>
-              <option>Base64</option>
+            <select id="selecao">
+              <option value="cesar">Cifra de César</option>
+              <option value="bs64">Base64</option>
             </select>
+
+            <div class="passo">
+              <label for="passo"> Escolha o incremento de 1 a 50:</label>
+              <input type="number" name="passo" min="1" max="50"/ id="passo"
+              checked>
+            </div>
           </fieldset>
 
           <fieldset>
@@ -82,5 +88,6 @@
     <footer>
       <p>© Copyright (De)Codificando - 2021 / Criado por: Thaís Carvalho</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
