@@ -29,11 +29,11 @@
       </header>
       <main>
         <form>
-          <label for="Mensagem">Digite aqui a sua mensagem:</label>
+          <label for="mensagem">Digite aqui a sua mensagem:</label>
           <textarea
             cols="70"
             rows="7"
-            id="Mensagem"
+            id="mensagem"
             class="input-padrao"
             required
           ></textarea>
@@ -41,14 +41,17 @@
           <fieldset>
             <legend>Escolha o método de codificação:</legend>
             <select id="selecao">
+              <option value="selecione">Selecione</option>
               <option value="cesar">Cifra de César</option>
               <option value="bs64">Base64</option>
             </select>
 
             <div class="passo">
-              <label for="passo"> Escolha o incremento de 1 a 50:</label>
-              <input type="number" name="passo" min="1" max="50"/ id="passo"
-              checked>
+              <label for="passo" id="escolha-passo">
+                Escolha o incremento de 1 a 50:</label
+              >
+              <input type="number" name="passo" min="1" max="50"/
+              id="escolha-passo" checked>
             </div>
           </fieldset>
 
@@ -72,15 +75,14 @@
               />Decodificar</label
             >
           </fieldset>
-          <button class="but" type="submit">Codificar Mensagem</button>
+          <button class="but">Codificar Mensagem!</button>
 
           <label for="Mensagem">Resultado:</label>
           <textarea
             cols="70"
             rows="7"
-            id="Mensagem"
+            id="mensagemFinal"
             class="input-padrao"
-            required
           ></textarea>
         </form>
       </main>
