@@ -19,12 +19,11 @@
         <p>
           Utilize esse site para criar seus códigos ou decodificar suas
           mensagens, utilizando Cifra de César ou Base64. A Cifra de César é um
-          tipo de cifra de substituição na qual cada letra do texto é
-          substituída por outra, que se apresenta no alfabeto abaixo dela um
-          número fixo de vezes. Base64 é um método para codificação de dados
-          para transferência na Internet. É utilizado frequentemente para
-          transmitir dados binários por meios de transmissão que lidam apenas
-          com texto, como por exemplo para enviar arquivos anexos por e-mail.
+          tipo de cifra de substituição, em que cada letra do texto é
+          substituída por outra, de acordo com a quantidade de incrementos
+          inseridos. Base64 é um método de codificação de dados para
+          transferência na Internet. É utilizado frequentemente para transmitir
+          dados binários por meios de transmissão que lidam apenas com texto.
         </p>
       </header>
       <main>
@@ -47,11 +46,15 @@
             </select>
 
             <div class="passo">
-              <label for="passo" id="escolha-passo">
-                Escolha o incremento de 1 a 50:</label
-              >
-              <input type="number" name="passo" min="1" max="50"/
-              id="escolha-passo" checked>
+              <label for="passo"> Escolha o incremento de 1 a 50:</label>
+              <input
+                type="number"
+                name="passo"
+                min="1"
+                max="50"
+                id="escolha-passo"
+                checked
+              />
             </div>
           </fieldset>
 

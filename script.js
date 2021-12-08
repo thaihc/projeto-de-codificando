@@ -47,14 +47,12 @@ botao.addEventListener("click", function (event) {
 function codeCesar(msg, passo) {
   var resultC = "";
   var codeC = 0;
-  console.log(typeof msg);
-  console.log(msg.length);
   for (var i = 0; i < msg.length; i++) {
     if (msg.charCodeAt(i) >= 65 && msg.charCodeAt(i) <= 90) {
-      codeC = (((msg.charCodeAt(i) - 65) + passo) % 26) + 65;
+      codeC = ((msg.charCodeAt(i) - 65 + passo) % 26) + 65;
     } else if (msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <= 122) {
-      codeC = (((msg.charCodeAt(i) - 97) + passo) % 26) + 97;
-    } else if (msg.charCodeAt(i) == 32) {
+      codeC = ((msg.charCodeAt(i) - 97 + passo) % 26) + 97;
+    } else if (msg.charCodeAt(i) === 32) {
       codeC = 32;
     }
     resultC += String.fromCharCode(codeC);
@@ -68,10 +66,10 @@ function decodeCesar(msg, passo) {
   var decodeC = 0;
   for (var i = 0; i < msg.length; i++) {
     if (msg.charCodeAt(i) >= 65 && msg.charCodeAt(i) <= 90) {
-      decodeC = (((msg.charCodeAt(i) - 65) - passo) % 26) + 65;
+      decodeC = ((msg.charCodeAt(i) - 65 - passo) % 26) + 65;
     } else if (msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <= 122) {
-      decodeC = (((msg.charCodeAt(i) - 97) - passo) % 26) + 97;
-    } else if (msg.charCodeAt(i) == 32) {
+      decodeC = ((msg.charCodeAt(i) - 97 - passo) % 26) + 97;
+    } else if (msg.charCodeAt(i) === 32) {
       decodeC = 32;
     }
     resultD += String.fromCharCode(decodeC);
